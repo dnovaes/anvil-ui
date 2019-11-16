@@ -87,10 +87,8 @@ publishing {
 }
 
 bintray {
-/*
 	user = project.hasProperty('bintrayUser') ? bintrayUser : ''
 	key = project.hasProperty('bintrayApiKey') ? bintrayApiKey : ''
-*/
 	//publications = ['sdk15', 'sdk19', 'sdk21']
 	publications = ['sdk21']
 	pkg {
