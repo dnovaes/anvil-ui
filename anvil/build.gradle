@@ -17,7 +17,7 @@ android {
 	}
 
 	defaultConfig {
-		minSdkVersion 15
+		minSdkVersion 21
 		targetSdkVersion 27
 	}
 
@@ -27,12 +27,6 @@ android {
 
 	flavorDimensions "api"
 	productFlavors {
-		sdk15 {
-			minSdkVersion 15
-		}
-		sdk19 {
-			minSdkVersion 19
-		}
 		sdk21 {
 			minSdkVersion 21
 		}
@@ -80,24 +74,6 @@ def fixPom(pom) {
 
 publishing {
 	publications {
-		sdk15(MavenPublication) {
-			groupId project.group
-			version project.version
-			artifactId POM_ARTIFACT_SDK15_ID
-			artifact "$buildDir/outputs/aar/$POM_ARTIFACT_SDK15_ID-release.aar"
-			artifact sourcesJar
-			artifact javadocJar
-			fixPom(pom)
-		}
-		sdk19(MavenPublication) {
-			groupId project.group
-			version project.version
-			artifactId POM_ARTIFACT_SDK19_ID
-			artifact "$buildDir/outputs/aar/$POM_ARTIFACT_SDK19_ID-release.aar"
-			artifact sourcesJar
-			artifact javadocJar
-			fixPom(pom)
-		}
 		sdk21(MavenPublication) {
 			groupId project.group
 			version project.version
@@ -111,22 +87,27 @@ publishing {
 }
 
 bintray {
+/*
 	user = project.hasProperty('bintrayUser') ? bintrayUser : ''
 	key = project.hasProperty('bintrayApiKey') ? bintrayApiKey : ''
-	publications = ['sdk15', 'sdk19', 'sdk21']
+*/
+	//publications = ['sdk15', 'sdk19', 'sdk21']
+	publications = ['sdk21']
 	pkg {
 		repo = 'maven'
 		name = POM_PACKAGE_NAME
-		websiteUrl = POM_URL
+		//websiteUrl = POM_URL
 		vcsUrl = POM_SCM_URL
 		licenses = [POM_LICENCE_SHORT_NAME]
 		publish = true
 		version {
 			name = project.version
+/*
 			gpg {
 				sign = true
 				passphrase = project.hasProperty('bintrayGpgPassword') ? bintrayGpgPassword : ''
 			}
+*/
 			mavenCentralSync {
 				sync = true
 				user = project.hasProperty('bintrayOssUser') ? bintrayOssUser : ''
