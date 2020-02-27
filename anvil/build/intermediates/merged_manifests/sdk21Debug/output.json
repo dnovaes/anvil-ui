@@ -1,0 +1,1 @@
+[{"outputType":{"type":"MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":-1,"enabled":true,"outputFile":"anvil-sdk21-debug.aar","fullName":"sdk21Debug","baseName":"sdk21-debug"},"path":"../../library_manifest/sdk21Debug/AndroidManifest.xml","properties":{"packageId":"trikita.anvil","split":""}}]

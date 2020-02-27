@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/intermediates/res/merged/release/drawable-anydpi-v21/design_ic_visibility_off.xml",
+        "source": "/home/dnovaes/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/0ea7b9dd87f456c979b8f5d5e25291ac/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/intermediates/res/merged/release/drawable-anydpi-v21/design_ic_visibility.xml",
+        "source": "/home/dnovaes/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/0ea7b9dd87f456c979b8f5d5e25291ac/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    }
+]

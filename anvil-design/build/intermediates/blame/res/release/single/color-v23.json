@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/intermediates/res/merged/release/color-v23/design_tint_password_toggle.xml",
+        "source": "/home/dnovaes/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/0ea7b9dd87f456c979b8f5d5e25291ac/res/color-v23/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/intermediates/res/merged/release/color-v23/abc_tint_switch_track.xml",
+        "source": "/home/dnovaes/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/2ebceaa2f2cd9f3d5367ee95675d3db9/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/intermediates/res/merged/release/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/home/dnovaes/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/2ebceaa2f2cd9f3d5367ee95675d3db9/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/intermediates/res/merged/release/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/dnovaes/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/2ebceaa2f2cd9f3d5367ee95675d3db9/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/intermediates/res/merged/release/color-v23/abc_tint_default.xml",
+        "source": "/home/dnovaes/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/2ebceaa2f2cd9f3d5367ee95675d3db9/res/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/intermediates/res/merged/release/color-v23/abc_tint_spinner.xml",
+        "source": "/home/dnovaes/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/2ebceaa2f2cd9f3d5367ee95675d3db9/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/intermediates/res/merged/release/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/home/dnovaes/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/2ebceaa2f2cd9f3d5367ee95675d3db9/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/intermediates/res/merged/release/color-v23/abc_color_highlight_material.xml",
+        "source": "/home/dnovaes/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/2ebceaa2f2cd9f3d5367ee95675d3db9/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/intermediates/res/merged/release/color-v23/abc_tint_edittext.xml",
+        "source": "/home/dnovaes/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/2ebceaa2f2cd9f3d5367ee95675d3db9/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/intermediates/res/merged/release/color-v23/abc_btn_colored_text_material.xml",
+        "source": "/home/dnovaes/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/2ebceaa2f2cd9f3d5367ee95675d3db9/res/color-v23/abc_btn_colored_text_material.xml"
+    }
+]

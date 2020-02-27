@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/AndroidManifest.xml:2:1-44
+INJECTED from /home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/AndroidManifest.xml:2:1-44
+INJECTED from /home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/AndroidManifest.xml:2:1-44
+	package
+		ADDED from /home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/AndroidManifest.xml:2:11-41
+		INJECTED from /home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/AndroidManifest.xml
+		INJECTED from /home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/AndroidManifest.xml:2:1-44
+uses-sdk
+INJECTED from /home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/AndroidManifest.xml
+INJECTED from /home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/AndroidManifest.xml
+INJECTED from /home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/AndroidManifest.xml
+INJECTED from /home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/AndroidManifest.xml
+		ADDED from /home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/AndroidManifest.xml
+		INJECTED from /home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/AndroidManifest.xml
+		ADDED from /home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/AndroidManifest.xml
+		INJECTED from /home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/AndroidManifest.xml

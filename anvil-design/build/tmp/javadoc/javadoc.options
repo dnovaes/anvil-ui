@@ -1,0 +1,6 @@
+-classpath '/home/dnovaes/Android/Sdk/platforms/android-27/android.jar'
+-d '/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/docs/javadoc'
+-doctitle 'anvil-design 10.10.10 API'
+-quiet 
+-windowtitle 'anvil-design 10.10.10 API'
+'/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java'

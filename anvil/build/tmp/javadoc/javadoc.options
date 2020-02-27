@@ -1,0 +1,10 @@
+-classpath '/home/dnovaes/Android/Sdk/platforms/android-27/android.jar'
+-d '/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil/build/docs/javadoc'
+-doctitle 'anvil 10.10.10 API'
+-quiet 
+-windowtitle 'anvil 10.10.10 API'
+'/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil/src/main/java/trikita/anvil/PropertySetter.java'
+'/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil/src/main/java/trikita/anvil/RenderableView.java'
+'/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil/src/main/java/trikita/anvil/RenderableAdapter.java'
+'/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil/src/main/java/trikita/anvil/BaseDSL.java'
+'/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil/src/main/java/trikita/anvil/Anvil.java'

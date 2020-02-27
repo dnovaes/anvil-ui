@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/dnovaes/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/98a31fe06a586d368229a1aacc189ddf/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/intermediates/res/merged/release/layout-v21/notification_action.xml",
+        "source": "/home/dnovaes/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/98a31fe06a586d368229a1aacc189ddf/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/dnovaes/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/98a31fe06a586d368229a1aacc189ddf/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/dnovaes/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/98a31fe06a586d368229a1aacc189ddf/res/layout-v21/notification_template_icon_group.xml"
+    }
+]

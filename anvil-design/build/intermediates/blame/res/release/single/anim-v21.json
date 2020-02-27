@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/intermediates/res/merged/release/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/home/dnovaes/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/0ea7b9dd87f456c979b8f5d5e25291ac/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build/intermediates/res/merged/release/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/home/dnovaes/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/0ea7b9dd87f456c979b8f5d5e25291ac/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    }
+]

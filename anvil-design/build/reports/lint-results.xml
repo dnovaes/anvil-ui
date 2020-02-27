@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 3.3.2">
+
+    <issue
+        id="OldTargetApi"
+        severity="Warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details."
+        category="Correctness"
+        priority="6"
+        summary="Target SDK attribute is not targeting latest version"
+        explanation="When your application runs on a version of Android that is more recent than your `targetSdkVersion` specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the `targetSdkVersion` is less than 14, your app may get an option button in the UI.&#xA;&#xA;To fix this issue, set the `targetSdkVersion` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: http://developer.android.com/reference/android/os/Build.VERSION_CODES.html as well as follow this guide:&#xA;https://developer.android.com/distribute/best-practices/develop/target-sdk.html"
+        url="https://developer.android.com/distribute/best-practices/develop/target-sdk.html"
+        urls="https://developer.android.com/distribute/best-practices/develop/target-sdk.html,http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        errorLine1="  targetSdkVersion 27"
+        errorLine2="  ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build.gradle"
+            line="22"
+            column="3"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of com.jfrog.bintray.gradle:gradle-bintray-plugin than 1.5 is available: 1.8.4"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="  classpath &apos;com.jfrog.bintray.gradle:gradle-bintray-plugin:1.5&apos;"
+        errorLine2="  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/build.gradle"
+            line="4"
+            column="3"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="BottomNavigationItemView.setCheckable can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((BottomNavigationItemView) v).setCheckable((boolean) arg);"
+        errorLine2="                                         ~~~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="503"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="NavigationMenuItemView.setCheckable can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((NavigationMenuItemView) v).setCheckable((boolean) arg);"
+        errorLine2="                                       ~~~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="507"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="BottomNavigationItemView.setChecked can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((BottomNavigationItemView) v).setChecked((boolean) arg);"
+        errorLine2="                                         ~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="513"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="NavigationMenuItemView.setChecked can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((NavigationMenuItemView) v).setChecked((boolean) arg);"
+        errorLine2="                                       ~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="517"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="CheckableImageButton.setChecked can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((CheckableImageButton) v).setChecked((boolean) arg);"
+        errorLine2="                                     ~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="521"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="BottomNavigationItemView.setIcon can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((BottomNavigationItemView) v).setIcon((Drawable) arg);"
+        errorLine2="                                         ~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="705"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="NavigationMenuItemView.setIcon can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((NavigationMenuItemView) v).setIcon((Drawable) arg);"
+        errorLine2="                                       ~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="709"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="BottomNavigationItemView.setIconTintList can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((BottomNavigationItemView) v).setIconTintList((ColorStateList) arg);"
+        errorLine2="                                         ~~~~~~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="715"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="BottomNavigationMenuView.setIconTintList can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((BottomNavigationMenuView) v).setIconTintList((ColorStateList) arg);"
+        errorLine2="                                         ~~~~~~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="719"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="BottomNavigationItemView.setItemBackground can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((BottomNavigationItemView) v).setItemBackground((int) arg);"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="729"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="BottomNavigationMenuView.setItemBackgroundRes can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((BottomNavigationMenuView) v).setItemBackgroundRes((int) arg);"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="735"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="BottomNavigationItemView.setItemPosition can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((BottomNavigationItemView) v).setItemPosition((int) arg);"
+        errorLine2="                                         ~~~~~~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="761"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="BottomNavigationMenuView.setItemTextColor can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((BottomNavigationMenuView) v).setItemTextColor((ColorStateList) arg);"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="773"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="NavigationMenuItemView.setNeedsEmptyIcon can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((NavigationMenuItemView) v).setNeedsEmptyIcon((boolean) arg);"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="793"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="BottomNavigationMenuView.setPresenter can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((BottomNavigationMenuView) v).setPresenter((BottomNavigationPresenter) arg);"
+        errorLine2="                                         ~~~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="868"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="BottomNavigationItemView.setShiftingMode can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((BottomNavigationItemView) v).setShiftingMode((boolean) arg);"
+        errorLine2="                                         ~~~~~~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="916"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="NavigationMenuItemView.setTextAppearance can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((NavigationMenuItemView) v).setTextAppearance((int) arg);"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="964"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="BottomNavigationItemView.setTextColor can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((BottomNavigationItemView) v).setTextColor((ColorStateList) arg);"
+        errorLine2="                                         ~~~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="970"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="NavigationMenuItemView.setTextColor can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((NavigationMenuItemView) v).setTextColor((ColorStateList) arg);"
+        errorLine2="                                       ~~~~~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="974"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="BottomNavigationItemView.setTitle can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((BottomNavigationItemView) v).setTitle((CharSequence) arg);"
+        errorLine2="                                         ~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="980"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="RestrictedApi"
+        severity="Error"
+        message="NavigationMenuItemView.setTitle can only be called from within the same library group (groupId=com.android.support)"
+        category="Correctness"
+        priority="4"
+        summary="Restricted API"
+        explanation="This API has been flagged with a restriction that has not been met.&#xA;&#xA;Examples of API restrictions:&#xA;* Method can only be invoked by a subclass&#xA;* Method can only be accessed from within the same library (defined by the Gradle library group id)&#xA;* Method can only be accessed from tests.&#xA;&#xA;You can add your own API restrictions with the `@RestrictTo` annotation."
+        errorLine1="          ((NavigationMenuItemView) v).setTitle((CharSequence) arg);"
+        errorLine2="                                       ~~~~~~~~">
+        <location
+            file="/home/dnovaes/AndroidStudioProjects/anvil-run-on-diff/anvil-design/src/main/java/trikita/anvil/design/DesignDSL.java"
+            line="984"
+            column="40"/>
+    </issue>
+
+</issues>
